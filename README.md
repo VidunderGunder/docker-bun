@@ -1,13 +1,23 @@
-# docker-bun
+# Docker Bun
 
-Install dependencies:
+Me getting familiar with Docker.
+
+## 🚀 Getting Started
 
 ```bash
 bun i
 ```
 
-To Run:
-
 ```bash
 bun index.ts
+```
+
+## 🐳 Docker
+
+```bash
+bun docker:build
+```
+
+```bash
+bun docker:run
 ```
