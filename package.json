@@ -1,0 +1,17 @@
+{
+  "name": "docker-bun",
+  "module": "index.ts",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "bun src/index.ts",
+    "docker:build": "docker build -t bun .",
+    "docker:run": "docker run -p 6969:6969 bun"
+  },
+  "devDependencies": {
+    "bun-types": "^0.6.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
