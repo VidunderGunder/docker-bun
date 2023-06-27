@@ -12,6 +12,8 @@ bun i
 bun index.ts
 ```
 
+Go to http://localhost:6969
+
 ## 🐳 Docker
 
 ```bash
