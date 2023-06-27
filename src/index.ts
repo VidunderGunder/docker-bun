@@ -1,7 +1,17 @@
 const server = Bun.serve({
   port: 6969,
   fetch(req) {
-    return new Response(`Bun Deez Nuts`);
+    const response = new Response(`Bun Deez Nuts`);
+
+    // Set CORS headers
+    response.headers.set("Access-Control-Allow-Origin", "*");
+    response.headers.set(
+      "Access-Control-Allow-Methods",
+      "GET, HEAD, POST, OPTIONS"
+    );
+    response.headers.set("Access-Control-Allow-Headers", "Content-Type");
+
+    return response;
   },
 });
 
